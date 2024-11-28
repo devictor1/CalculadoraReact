@@ -1,13 +1,123 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página descrevendo gostos pessoais e hobbies do Victor Fregni">
+    <meta name="robots" content="index, all">
+    <meta name="author" content="Victor Fregni Gogorza">
+    <meta name="date" content="August 2024">
+    <meta name="keywords" content="Victor, Fregni, Gogorza, contato, desenvolvedor, portfolio">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"><!--Acima, meta tags para melhor acessibilidade e SEO-->
+    <link rel="stylesheet" href="css/styles.css"> <!--Link para o arquivo CSS-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!--Link para as fontes-->
+    <link rel="icon" href="img/luz-acesa.png" type="image/png"><!--Link para o ícone da página-->
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script><!--Script para tradução da página-->
+    <script src="js/scriptTranslate.js"></script><!--Script para tradução da página-->
+    <title>Página pessoal</title>
+</head>
+<body>
+    <header>
+        <h1>Seja bem-vindo à minha página pessoal!</h1>
+    </header>  
+    <div class="translate" id="google-translate-element"></div>
+
+    <section class="section1"> <!--primeira seção, imagem e texto introdutório-->
+
+    <section class="bloco1">
+        <a href="https://github.com/devictor1">Victor F. Gogorza</a>
+        <br><br>
+        <div class="container">
+            <img src="img/imgVictor2.png" alt="Ao lado do texto, uma foto do desenvolvedor que programou a página, Victor Fregni, com uma mão no queixo e outra em seu cotovelo olhando para o lado, em fundo verde.">
+        </div>
+    </section>
+
+        <section class="bloco2">
+        <div class="texto"><h2>Oi, eu sou o Victor!</h2><br>
+            <p>Olá, meu nome é Victor Fregni Gogorza e estou no último semestre do curso de Análise e Desenvolvimento de Sistemas. Ao longo da minha jornada acadêmica, tive a oportunidade de trabalhar em diversos projetos utilizando Java, que se tornou minha linguagem favorita até o momento. Recentemente conclui dois programas de extensão: Python Intermediário e Modelagem e Programação de Banco de Dados!</p> <p>Além dos estudos, estou aprendendo Japonês e praticando Tênis de Mesa, atividades que me ajudam a manter a mente ativa e a desenvolver novas habilidades. Minha aspiração é me tornar um programador versátil, capaz de se adaptar aos desafios que surgem, sempre mantendo uma abordagem flexível e criativa na resolução de problemas.</p>
+            </div>
+        </section>
+    </section>
+
+
+    <section class="section2"> <!--Segunda seção, Portfolio-->
+        <h2 class="titulo">MEU PORTFÓLIO</h2>
+        <h3>Abaixo estão alguns dos projetos que desenvolvi ao longo do curso!</h3>
+        <section class="portfolio" id="portfolio">
+            <div class="interface">
+                <div class="flex">
+
+                    <div class="img-port1" style="background-image: url(img/kellsmed.jpeg);">
+                        <a href="https://github.com/devictor1/medicina-do-trabalho"><div class="overlay">Página de medicina do trabalho</div></a>
+                    </div>
+
+                    <div class="img-port1" style="background-image: url(img/petshop.jpeg);">
+                        <a href="https://github.com/devictor1/petshop"><div class="overlay">Site de Petshop (diversas páginas)</div></a>
+                    </div>
+
+                    <div class="img-port1" style="background-image: url(img/profileCard.jpeg);">
+                        <a href="https://github.com/devictor1/Profile-Card"><div class="overlay">Card de Perfil em React Native</div></a>
+                    </div>
+
+                    <div class="img-port2" style="background-image: url(img/estrogonofe.jpeg);">
+                        <a href="https://github.com/devictor1/ProductCard"><div class="overlay">Card de Produto em React Native</div></a>
+                    </div>
+
+                    <div class="img-port1" style="background-image: url(img/Habit.png);">
+                        <a href="https://github.com/devictor1/Habit-Tracker"><div class="overlay">Habit Tracker em React</div></a>
+                    </div>
+
+                    <div class="img-port1" style="background-image: url(img/calc1.png);">
+                        <a href="https://github.com/devictor1/CalculadoraJS"><div class="overlay">Calculadora em JS</div></a>
+                    </div>
+
+                    <div class="img-port1" style="background-image: url(img/calc2.png);">
+                        <a href="https://github.com/devictor1/CalculadoraReact"><div class="overlay">Calculadora em React</div></a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+      <section id="contato" class="section3"> <!--Terceira seção, área de contato-->
+        <p class="title-form">Entre em contato comigo!</p>
+        <form action="https://formsubmit.co/b003ef1941632e1e6bdd89fac9b03d1e" method="post">
+           
+            <div class="campo">
+            <label for="nome"><strong>Nome:</strong></label>
+            <input type="text" name="name" placeholder="Nome completo" autocomplete="off" id="nome" required/>
+            </div>
+      
+            <div class="campo">
+            <label for="email"><strong>E-mail:</strong></label>
+            <input type="email" name="email" placeholder="E-mail" autocomplete="off" id="email" required/>
+            </div>
+      
+            <div class="campo">
+            <label for="tel"><strong>Telefone:</strong></label>
+            <input type="tel" name="Telefone" placeholder="Telefone" autocomplete="off" id="tel" required/>
+            </div>
+      
+            <div class="campo">
+            <label for="subject"><strong>Assunto:</strong></label>
+            <input type="text" name="subject" placeholder="Assunto" id="assunto"/>
+            </div>
+            
+      
+            <label for="message" class="campo" name="email"><strong>Mensagem</strong></label>
+            <textarea id="my-textarea" placeholder="Digite sua mensagem aqui" name="email"></textarea>
+            <span id="character-count">Caracteres restantes: 512</span>
+            <script src="js/scriptCounterResize.js"></script>
+            <div>
+            <button id="btn-submit" class="btn-submit" type="submit" name="email">Enviar</button>
+            </div>
+        </form>
+      </section>
+</body>
+<footer> 
+    <p>
+        &copy;2024 Victor Fregni Gogorza. Todos os direitos reservados.
+    </p>
+</footer>
 </html>
